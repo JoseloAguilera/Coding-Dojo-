@@ -61,3 +61,8 @@
 input{
   margin-left: 10px;
 }
+
+.error{
+  color: red;
+  margin: 0px;
+}
