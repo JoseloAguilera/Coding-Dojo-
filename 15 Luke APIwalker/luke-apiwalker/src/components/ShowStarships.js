@@ -1,17 +1,4 @@
-// Starships
 
-// {
-//     "name": "CR90 corvette",
-//     "model": "CR90 corvette",
-//     "manufacturer": "Corellian Engineering Corporation",
-//     "cost_in_credits": "3500000",
-//     "length": "150",
-//     "max_atmosphering_speed": "950",
-//     "crew": "30-165",
-//     "passengers": "600",
-//     "cargo_capacity": "3000000",
-//     "consumables": "1 year",
-// }
 
 const ShowStarships = ({dataState}) => {
     const {name, model, manufacturer, cost_in_credits, length, max_atmosphering_speed, crew, passengers, cargo_capacity, consumables} = dataState;

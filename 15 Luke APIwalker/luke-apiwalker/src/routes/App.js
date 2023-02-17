@@ -35,7 +35,6 @@ function App() {
       } else setDataState(state);
     } catch (error) {
       setDataState(null);
-      console.log("Error", error.message);
     } finally {
       setIsLoading(false);
     }
@@ -57,7 +56,7 @@ function App() {
       return (
         <div>
           <p>Estos no son los droides que está buscando</p>
-          <img src="https://i.etsystatic.com/isla/8f3f52/55927605/isla_fullxfull.55927605_qptsei4m.jpg" alt="Imagem de Obi Wan Kenobi"/>
+          <img src="https://i.etsystatic.com/isla/8f3f52/55927605/isla_fullxfull.55927605_qptsei4m.jpg" alt="Obi Wan Kenobi"/>
         </div>
       );
     return cards[categoryState];

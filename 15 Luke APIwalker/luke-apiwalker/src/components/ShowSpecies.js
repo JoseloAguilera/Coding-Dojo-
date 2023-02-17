@@ -1,5 +1,4 @@
-// Species:
-// {name: "Human", classification: "mammal", designation: "sentient", average_height: "180", skin_colors: "caucasian, black, asian, hispanic"}
+
 
 const ShowSpecies = ({dataState}) => {
     const {name, classification, designation, average_height, skin_colors} = dataState;
