@@ -9,7 +9,7 @@ const CreateProductForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form submitted");
+
 
         const newProduct = {
             title,

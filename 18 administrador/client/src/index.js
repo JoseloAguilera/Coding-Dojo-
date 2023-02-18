@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import CreateProductView from "./routes/CreateProductView";
 import ProductDetailView from "./routes/ProductDetailView";
-
+import EditProductView from "./routes/EditProductView";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './index.css';
@@ -16,6 +16,8 @@ root.render(
             <Routes>
                 <Route path="/" element={<CreateProductView />} />
                 <Route path="/products/:id" element={<ProductDetailView />} />
+                <Route path="/products/:id/edit" element={<EditProductView />}
+                />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

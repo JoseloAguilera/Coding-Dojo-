@@ -24,3 +24,18 @@ module.exports.newProduct = (req, res) => {
         );
 };
 
+module.exports.updateProduct = (req, res) => {
+    Product.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+        .then((updatedProduct) => res.json({ product: updatedProduct }))
+        .catch((err) =>
+            res.json({ message: "Error: ", error: err })
+        );
+};
+
+module.exports.deleteProduct = (req, res) => {
+    Product.deleteOne({ _id: req.params.id })
+        .then((result) => res.json({ result: result }))
+        .catch((err) =>
+            res.json({ message: "Error: ", error: err })
+        );
+};
