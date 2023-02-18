@@ -22,4 +22,10 @@ code {
   position: relative;
 }
 
+.listado{
+  margin-top: 25px;
+}
 
+span{
+  font-weight: bold;
+}

@@ -2,7 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import CreateProductView from "./routes/CreateProductView";
+import ProductDetailView from "./routes/ProductDetailView";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -12,6 +15,7 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<CreateProductView />} />
+                <Route path="/products/:id" element={<ProductDetailView />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
