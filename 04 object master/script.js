@@ -73,3 +73,4 @@ console.log('Recuento de la cantidad de pokémon que son de tipo "normal"')
 const pkmNormal = pokemon.filter(pkmn => pkmn.types.includes('normal')).length;
 console.log(pkmNormal);
 
+//hola mi nomvbre es Jose
